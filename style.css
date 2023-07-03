@@ -1,7 +1,15 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
-
+a{
+    color: #c7c5ca;
+    text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+    color: lightblue;
+    text-decoration: underline;
+}
 b {
     font-weight: 600;
 }
@@ -101,10 +109,12 @@ aside span {
 
 .mail::before,
 .home::before,
-.phone::before {
+.phone::before,
+.portfolio::before {
     content: "";
     background-size: 15px;
     display: inline-block;
+    position: relative;
     width: 15px;
     height: 15px;
     filter: invert(100%) sepia(55%) saturate(0%) hue-rotate(152deg) brightness(111%) contrast(101%);
@@ -121,4 +131,9 @@ aside span {
 
 .phone::before {
     background-image: url("./assets/telephone.png");
+}
+.portfolio::before{
+    content: "📁";
+    position: relative;
+    right: 3px;
 }
