@@ -60,6 +60,9 @@ aside {
     row-gap: 3em;
     padding: 2.5em;
 }
+main section {
+    row-gap: 1.5em;
+}
 
 section {
     width: 65%;
