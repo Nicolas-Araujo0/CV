@@ -1,45 +1,56 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
-a{
+
+a {
     color: #c7c5ca;
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     cursor: pointer;
     color: lightblue;
     text-decoration: underline;
 }
+
 b {
     font-weight: 600;
 }
-h1,h2,h3,h4,h5{
+
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-weight: 600;
 }
+
 h1 {
-    font-size: 30px;
+    font-size: 21px;
     margin-bottom: 5px;
 }
 
 h2 {
-    font-size: 26px;
+    font-size: 20px;
 }
 
 h3 {
-    font-size: 22px;
+    font-size: 19px;
     color: rgb(209, 27, 88);
 }
-h4{
-    font-size: 20px;
+
+h4 {
+    font-size: 17px;
 }
-h5{
-    font-size: 18px;
+
+h5 {
+    font-size: 16px;
 }
 
 p,
 span,
 li {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 li {
@@ -60,6 +71,7 @@ aside {
     row-gap: 3em;
     padding: 2.5em;
 }
+
 main section {
     row-gap: 1.5em;
 }
@@ -78,7 +90,7 @@ article {
 article>div {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 15px;
 }
 
 article>div div {
@@ -95,13 +107,16 @@ aside {
 }
 
 .imgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 80%;
     margin: 0 auto;
+    row-gap: 10px;
 }
 
 .imgContainer img {
     width: 100%;
-    height: 100%;
     border-radius: 10px;
 }
 
@@ -134,8 +149,19 @@ aside span {
 .phone::before {
     background-image: url("./assets/telephone.png");
 }
-.portfolio::before{
+
+.portfolio::before {
     content: "📁";
     position: relative;
     right: 3px;
+}
+
+article.no-space {
+    div {
+        row-gap: 5px;
+    }
+}
+
+.gap {
+    row-gap: 5px;
 }
